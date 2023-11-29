@@ -10,8 +10,10 @@ html, body {
 
 body {
     display: flex;
+    font-family: 'Kanit', sans-serif;
 }
 
+/* left container */
 .left-container {
     width: 35%;
     height: 100%;
@@ -19,6 +21,7 @@ body {
     background-size: cover;
     position: relative;
 }
+
 
 .banner {
     display: flex;
@@ -35,19 +38,19 @@ body {
     color: white;
 }
 
-
+/* right container */
 .right-container {
     width: 65%;
     height: 100%;
     padding: 0;
 }
 
+/* top */
 .top {
     padding: 10px;
     width: 100%;
-    height: 33%;
-    background-color:#F3F0E8;
-    font-family: 'Kanit', sans-serif;
+    height: 32%;
+    background-color:#fafafa;
 }
 
 .top p {
@@ -58,14 +61,61 @@ body {
     font-weight: 800;
 }
 
+/* signup */
 .signup {
-    width: 100%;
+    width: calc(100% - 56px);
     height: 37%;
-    border: 2px solid blue;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 28px;
+}
+
+legend {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.input_row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input_box {    
+    width: 50%;
+    margin: 0 10px;
+    border-width: 0px 0px 2px 0px;
+    border-style: solid;
+    margin-top: 30px;
+    position: relative; 
+}
+
+.input_box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    padding: 7px 0px;
+}
+
+.input_box label {
+    position: absolute;
+    left: 0px;
+    font-size: 15px;
+    top: 8px;
+    pointer-events: none;
+    transition: 0.4s;
+}
+
+.input_row .input_box input:focus + label,
+.input_row .input:focus:valid + label{
+    top: -15px;
+    font-size: 18px;
 }
 
 .bottom {
     width: 100%;
-    height: 30%;
-    border: 2px solid yellow;
+    height: 20%;
+    background-color:#fafafa;
 }
