@@ -21,10 +21,9 @@
                 You <i>know</i> you want to.    
             </p>
         </div>
-        <div class="signup">
-            <form action="#">
+        <form action="#">
+            <div class="signup">
                 <legend>Let's do this!</legend>
-
                 <div class="input_row">
                     <div class="input_box">
                         <input type="text" id="first_name" placeholder=" " required>
@@ -42,7 +41,7 @@
                         <label for="email">Email</label>
                     </div>
                     <div class="input_box">
-                        <input type="text" id="number" placeholder=" " required>
+                        <input type="text" id="id_number" pattern="\d*" placeholder=" " required>
                         <label for="number">Phone Number</label>
                     </div>
                 </div>
@@ -57,15 +56,13 @@
                         <label for="confirm-password">Confirm Password</label>
                     </div>
                 </div>
-
-            </form>
         </div>
+        
         <div class="bottom">
-            <button type="submit">Create Account</button>
+            <button type="submit" id="submit">Create Account</button>
             <p>Already have an account?<a href="#"> Sign-in</a></p>
         </div>
-    </div>
-
+    </form>
 <script src="script.js"></script>
 </body>
 </html>
