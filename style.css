@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200&family=Pacifico&display=swap');
 
 html, body {
     width: 100%;
@@ -12,7 +13,7 @@ body {
 }
 
 .left-container {
-    width: 40%;
+    width: 35%;
     height: 100%;
     background-image: url("https://reneeroaming.com/wp-content/uploads/2020/10/What-to-wear-hiking-as-a-woman-best-down-jacket-for-women-819x1024.jpg");
     background-size: cover;
@@ -24,7 +25,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 5px;
-    width: calc(100% - 5px);
+    width: calc(100% - 10px);
     height: 80px;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
@@ -36,15 +37,25 @@ body {
 
 
 .right-container {
-    width: 60%;
+    width: 65%;
     height: 100%;
-    border: 2px solid red;
+    padding: 0;
 }
 
 .top {
+    padding: 10px;
     width: 100%;
     height: 33%;
-    border: 2px solid green;
+    background-color:#F3F0E8;
+    font-family: 'Kanit', sans-serif;
+}
+
+.top p {
+    margin-top: 60px;
+    width: 70%;
+    word-wrap: break-word;
+    font-size: 23px;
+    font-weight: 800;
 }
 
 .signup {
