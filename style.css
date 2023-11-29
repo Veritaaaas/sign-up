@@ -48,9 +48,10 @@ body {
 /* top */
 .top {
     padding: 10px;
-    width: 100%;
+    padding-left: 20px;
+    width: calc(100% - 30px);
     height: 32%;
-    background-color:#fafafa;
+    background-color:#fafafad4;
 }
 
 .top p {
@@ -61,14 +62,14 @@ body {
     font-weight: 800;
 }
 
-/* signup */
+/* sign up */
 .signup {
     width: calc(100% - 56px);
     height: 37%;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     padding: 28px;
+    box-shadow: 0px 9px 8px rgba(0, 0, 0, 0.5);
 }
 
 legend {
@@ -80,6 +81,7 @@ legend {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
 }
 
 .input_box {    
@@ -87,7 +89,6 @@ legend {
     margin: 0 10px;
     border-width: 0px 0px 2px 0px;
     border-style: solid;
-    margin-top: 30px;
     position: relative; 
 }
 
@@ -103,19 +104,38 @@ legend {
     position: absolute;
     left: 0px;
     font-size: 15px;
-    top: 8px;
-    pointer-events: none;
+    top: 10px;
     transition: 0.4s;
 }
 
 .input_row .input_box input:focus + label,
-.input_row .input:focus:valid + label{
+.input_row .input_box input:not(:placeholder-shown) + label{
     top: -15px;
     font-size: 18px;
 }
 
+/* bottom */
 .bottom {
-    width: 100%;
-    height: 20%;
-    background-color:#fafafa;
+    width: calc(100% - 60px);
+    height: calc(20% - 60px);
+    background-color:#fafafad4;
+    padding: 30px;
+}
+
+button {
+    width: 160px;
+    height: 45px;
+    border-radius: 25px;
+    background-color: #5080b0;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.bottom p {
+    font-size: 25px;
+}
+
+.bottom a {
+    color: #5080b0;
 }
